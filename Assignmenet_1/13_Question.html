@@ -1,8 +1,69 @@
-<!DOCTYPE html>
 <html>
     <head>
         <title>
-            HTML 5 
+            HTML 5 Form
         </title>
+        <style>
+            label{
+                display:block;
+            }
+            input{
+                margin-bottom:10px;
+            }
+        </style>
     </head>
+  <body>
+        <h1>HTML 5 Form Design</h1>
+    <form action="form.php" mode="post">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name">
+
+        <label for="emal">Email:</label>
+        <input type="email"id="email" name="email">
+
+        <label for="password">Password: </label>
+        <input type="password" id="password" name="password">
+
+        <label for="gender">Gender</label>
+        <label for="male">Male</label>
+        <input type="radio" id="male" name="gender">
+        <label for="female">Female</label>
+        <input type="radio" id="female" name="gender">
+
+        <label for="subscribe">Subscribe to newsletter</label>
+        <input type="checkbox" id="checkbox" name="checkbox">
+
+        <label for="country">Country:</label>
+        <select name="country" id="country">
+            <option value="india">India</option>
+            <option value="unitedstate">United State</option>
+            <option value="chaina">Chaina</option>
+        </select>
+
+        <label for="date">Date of Birth</label>
+        <input type="date" id="date" name="date">
+
+        <label for="range">Quantity:</label>
+        <input type="range" id="range" name="range">
+
+        <label for="comments">Comments:</label>
+        <textarea id="comments" name="comments" rows="2" cols="30"></textarea>
+
+        <label for="color">Favorate Color:</label>
+        <input type="color" id="color" name="color">
+
+        <label for="number">Quantity:</label>
+        <input type="number" id="number" name="number" min="1" max="10" valu="1" required>
+
+        <label for="time">Meeting Time</label>
+        <input type="time" id="time" name="time">
+
+        <label for="search">Search:</label>
+        <input type="search" id="search" name="search" placeholder="Search...">
+
+        <label for="tel">Phone number:</label>
+        <input type="tel" id="tel" name="tel">
+
+    </form>
+  </body>
 </html>
