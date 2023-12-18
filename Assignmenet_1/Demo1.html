@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Feedback Form</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+        label {
+            display: block;
+            margin-bottom: 5px;
+        }
+        input, textarea {
+            margin-bottom: 10px;
+            width: 100%;
+            box-sizing: border-box;
+        }
+    </style>
+</head>
+<body>
+
+    <h2>Feedback Form</h2>
+    <form action="submit_feedback.php" method="post">
+        <label for="name">Your Name:</label>
+        <input type="text" id="name" name="name" required>
+
+        <label for="email">Your Email:</label>
+        <input type="email" id="email" name="email" required>
+
+        <label for="feedbackType">Feedback Type:</label>
+        <select id="feedbackType" name="feedbackType" required>
+            <option value="compliment">Compliment</option>
+            <option value="suggestion">Suggestion</option>
+            <option value="complaint">Complaint</option>
+        </select>
+
+        <label for="rating">Rating:</label>
+        <input type="radio" id="excellent" name="rating" value="excellent">
+        <label for="excellent">Excellent</label>
+        <input type="radio" id="good" name="rating" value="good">
+        <label for="good">Good</label>
+        <input type="radio" id="average" name="rating" value="average">
+        <label for="average">Average</label>
+        <input type="radio" id="poor" name="rating" value="poor">
+        <label for="poor">Poor</label>
+
+        <label for="comments">Comments:</label>
+        <textarea id="comments" name="comments" rows="4" cols="50" placeholder="Your feedback comments"></textarea>
+
+        <button type="submit">Submit Feedback</button>
+    </form>
+
+</body>
+</html>

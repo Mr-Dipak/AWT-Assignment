@@ -1,0 +1,49 @@
+<html>
+    <head>
+        <title>
+            Registration Form
+        </title>
+
+        <style>
+            label,button{
+                display:block;
+            }
+            input,textarea,select{
+                margin-bottom:10px;
+            }
+        </style>
+        
+    </head>
+    <body>
+            <h1>Registration Form</h1>
+        <form action="registration_form.php"  mode="post">
+            <label for="firstname">First Name: </label>
+            <input type="textbox" name="firstname" required>
+            <label for="lastname">Last Name: </label>
+            <input type="textbox" name="lastname" required>
+            <label for="email">Email: </label>
+            <input type="texbox" name="email" required>
+            <label for="password">Password: </label>
+            <input type="textbox" name="password" required>
+            <label for="bio">Bio: </label> 
+            <textarea name="bio" rows="5" cols="30" placeholder="Tell us yourself"></textarea>
+            <label for="gender">Gender: </label>
+            <label for="gender">Male</label> 
+            <input type="radio" id="male" value="male" name="gender">
+            <label for="gender">female</label>
+            <input type="radio" id="female" value="female" name="gender">
+            <label for="interest">Interest:</label>
+            <select name="interest[]" id="interest" multiple>
+                <option value="Sports">Sports</option>
+                <option value="Music">Music</option>
+                <option value="Coding">Coding</option>
+                <option value="Reading">Reading</option>
+            </select>
+            <label for="subscribe">Subscribe to newsletter</label>
+            <input type="checkbox" name="subscribe" id="subscribe" value="Yes">
+            <label for="subscribe">Yes I want to subscribe</label>
+            <button type="submit">Submit</button>
+                
+        </form>
+    </body>
+</html>

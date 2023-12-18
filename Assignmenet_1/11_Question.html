@@ -1,0 +1,53 @@
+<!DOCTYPE html> 
+<html>
+    <head>
+        <title>
+            FeedBack Form
+        </title>
+        <style>
+            label,button{
+                display:block;
+            }
+            input,select{
+                margin-bottom:10px;
+            }
+            
+        </style>
+    </head>
+    <body>
+        <h1>Feedback Form</h1>
+        <form action="Feedback.php" mode="post">
+            <label for="name">Your Name:</label>
+            <input type="textbox" id="name" name="name">
+
+            <label for="email">Your Email:</label>
+            <input type="textbox" id="email" name="email">
+
+            <label for="feedback">Feedback Type:</label>
+            <select name="feedback" id="feedback">
+                <option value="Complaint">Complaint</option>
+                <option value="Suggestion">Suggestion</option>
+            </select>
+
+            <label for="rating">Rating</label>
+            <br>
+            <label for="Excellent">Excellent</label>
+            <input type="radio" id="Excellent" name="rating" value="Excellent">
+
+            <label for="good">Good</label>
+            <input type="radio" id="good" name="rating" value="good">
+
+            <label for="average">Average</label>
+            <input type="radio" id="average" name="rating" value="average">
+
+            <label for="poor">Poor</label>
+            <input type="radio" id="poor" value="poor" name="rating">
+
+            <label for="comments">Comments:</label>
+            <textarea id="comments" value="comments" name="comments" rows="4" cols="30"></textarea>
+            
+            <button type="submit">Submit Feedback</button>
+
+        </form>
+    </body>
+</html>

@@ -1,0 +1,50 @@
+<html>
+    <head>
+        <title>
+            Student Information Form
+        </title>
+        <style>
+            label,button{
+                display:block;
+            }
+        </style>
+    </head>
+    <body>
+        <form action="Student_information_form.php" mode="post">
+            <label for="name">First Name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="lastname">Last Name:</label>
+            <input type="text" id="lastname" name="lastname">
+
+            <label for="gender">Gender</label>
+            <label for="male">male</label>
+            <input type="radio" id="male" name="gender">
+
+            <label for="female">female</label>
+            <input type="radio" id="female" name="gender">
+
+            <label for="dateOfbirth">Date of Birth:</label>
+            <input type="date" id="dateofbirth" name="dateofbirth" requird>
+
+            <label for="grade">Grade</label>
+            <select name="grade" id="grade">
+                <option value="freshman">Freshman</option>
+                <option value="sophomore">Sophomore</option>
+                <option value="junior">Junior</option>
+                <option value="senior">Senior</option>
+            </select>
+
+            <label for="major">Major:</label>
+            <input type="text" id="major" name="major" required>
+
+            <label for="email">Email:</label>
+            <input type="text" id="email" name="value" required>
+
+            <label for="number">Phone Number:</label>
+            <input type="text" id="number" name="number" required>
+            
+            <button type="submit" id="button">submit</button>
+        </form>
+    </body>
+</html>
