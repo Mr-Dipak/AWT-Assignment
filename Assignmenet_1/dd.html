@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Number Logger</title>
+</head>
+<body>
+
+    <script>
+        var enteredNumber;
+
+        do {
+            enteredNumber = prompt('Enter a number (0 to stop):');
+
+            if (enteredNumber !== null) {
+                enteredNumber = parseFloat(enteredNumber);
+
+                if (!isNaN(enteredNumber)) {
+                    document.body.innerHTML += 'You have entered: ' + enteredNumber + '<br>';
+                } else {
+                    alert('Please enter a valid number.');
+                }
+            }
+        } while (enteredNumber !== 0 && enteredNumber !== null);
+    </script>
+
+</body>
+</html>

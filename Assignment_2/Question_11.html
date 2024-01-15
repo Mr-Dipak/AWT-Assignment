@@ -1,0 +1,24 @@
+<html>
+    <head>
+        <script>
+
+            function wordCounter(){
+                var paragraph = document.getElementById('paragraph').value;
+                var words = paragraph.match(/\b\w+\b/g);
+                if(words!== null)
+            {
+                var count = words.length;
+                alert("total words: "+ count)
+            }
+            else{
+                alert("NO Word Found")
+            }
+            }
+
+        </script>
+    </head>
+    <body>
+        <textarea id="paragraph" cols="30" rows="3" onblur="wordCounter()"></textarea>
+        
+    </body>
+</html>

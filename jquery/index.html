@@ -1,0 +1,87 @@
+<html>
+<head>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            $("input").focus(function(){
+                $(this).css("background-color","yellow");
+            });
+            $("input").blur(function(){
+                $(this).css("background-color","green");
+            });
+
+            // Animating the input (you can customize the animation properties)
+            $("input").animate({
+                width: '200px',
+                height: '50px',
+                fontSize: '20px'
+            });
+
+            $("button").click(function(){
+                $("p").addClass("style");
+                $("body").addClass("style1");
+            });
+
+            $("h1").hover(function(){
+                $(this).css("color","pink");
+            }, function(){
+                // This function is called when the mouse leaves the element
+                $(this).css("color","black");
+            });
+         
+       
+            $("div").mouseenter(function(){
+                $(this).hide();
+            }).mouseleave(function(){
+                $(this).show();
+            });
+
+            $('button.toggle').click(function(){
+                $("div.toggle").toggle(1000);
+            })
+
+        });
+
+        console.log($);
+    </script>
+    <style type="text/css">
+        .style {
+            font-size: 20px;
+            color: red;
+            background-color: aqua;
+            font-weight: bold;
+            font-style: italic;
+            justify-content: start;
+        }
+        .style1 {
+            background-image: url(image.png);
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+    </style>
+</head>
+<body>
+    <h1>Heading</h1>
+    Fullname: <input type="text" name="fullname"><br>
+    Email: <input id="second" type="text" name="email">
+    <p>this is paragraph 1</p>
+    <p>this is paragraph 2</p>
+    <p>this is paragraph 3</p>
+    <p class="red">this is paragraph 4</p>
+    <button>Click Me</button><br>
+
+
+
+    <div>
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Inventore, dolorem?
+    </div>
+
+    <br>
+    <button class="toggle">click to toggle</button>
+
+    <div class="toggle">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo provident, labore consectetur sit molestiae cumque dicta delectus amet sapiente, voluptatum esse molestias iusto rem eius porro incidunt illo nemo recusandae!
+    </div>
+
+</body>
+</html>

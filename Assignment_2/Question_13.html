@@ -1,0 +1,20 @@
+<!-- 3. Write a HTML code that will display a textarea on webpage to accept a paragraph
+from user. Using JavaScript replace the every occurrences of word ‘sachin’ with
+‘ramesh’ present in the paragraph -->
+
+
+<html>
+    <head>
+        <script>
+            function userNameReplacer(){
+                var userParagraph = document.getElementById('userName').value;
+                var replacedParagraph = userParagraph.replace((/\bsachin\b/g),"ramesh") 
+                document.querySelector('#userName').value = replacedParagraph;
+                
+            }
+        </script>
+    </head>
+    <body>
+        <textarea id="userName" cols="30" rows="10" onblur="userNameReplacer()"></textarea>
+    </body>
+</html>

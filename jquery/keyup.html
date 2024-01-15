@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Background Color Changer</title>
+    <!-- Include jQuery from CDN -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+</head>
+<body>
+
+<input type="text" id="colorInput"  placeholder="Type a color name">
+
+<script>
+    // Wait for the document to be ready
+    $(document).ready(function () {
+        // Attach a keyup event handler to the input field
+        $('#colorInput').keyup(function () {
+            // Get the value of the input field
+            var color = $(this).val();
+
+            // Change the background color of the body to the entered color
+            $('body').css('background-color', color);
+        });
+    });
+</script>
+
+</body>
+</html>

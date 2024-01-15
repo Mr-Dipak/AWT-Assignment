@@ -1,0 +1,13 @@
+<html>
+    <body>
+        <div class="box" id="box" style="color:red">dipak</div>
+
+        <script>
+            var div = document.createElement('div');
+            div.setAttribute('class','box');
+            div.innerHTML = "i have been inserted by <b>dipak</b>"
+            div.textContent = "hello"
+            document.querySelector("body").appendChild(div)
+        </script>
+    </body>
+</html>

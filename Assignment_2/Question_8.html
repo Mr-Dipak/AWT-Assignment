@@ -1,0 +1,22 @@
+<html>
+    <head>
+
+    </head>
+    <body>
+        <label for="studentName"><input type="text" id="studentName" onblur="nameValidator()"></label>
+    </body>
+    <script>
+        
+        function nameValidator(){
+            var studentName = document.querySelector("#studentName").value;
+            var regex = /^[a-zA-Z]+$/;
+            if(regex.test(studentName)){
+                alert('Valid Name: '+ studentName)
+            }
+            else{
+            alert('Please Enter correct Name!')
+            }
+
+        }
+    </script>
+</html>

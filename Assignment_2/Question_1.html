@@ -1,0 +1,36 @@
+<html>
+    <head>
+        <style>
+            img{
+
+                max-width: 100%;
+                 height: auto;
+                display:none;
+            }
+        </style>
+    </head>
+    <body>
+        <label for="image1">image1: <input type="radio" name="radio" onchange="imageDisplay('image1')"></label>
+        <label for="image2">image2: <input type="radio" name="radio" onchange="imageDisplay('image2')"></label>
+
+        <div>
+            <img src="image1.jpg" id="image1" alt="">
+            <img src="image2.jpg" id="image2" alt="">
+        </div>
+
+        <script>
+            function imageDisplay(imageId){
+
+                var images = document.querySelectorAll('img');
+                for(let i =0; i<images.length;i++){
+                    images[i].style.display="none";
+                }
+            var selectedImage = document.getElementById(imageId);
+            if(selectedImage){
+                selectedImage.style.display="block";
+            };
+
+            }
+        </script>
+    </body>
+</html>

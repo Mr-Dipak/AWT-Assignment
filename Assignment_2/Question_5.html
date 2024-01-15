@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #inputStirng{
+            text-decoration:underline;
+        }
+    </style>
+</head>
+<body>
+
+    <label for="inputString">Enter The String: <input type="text" id="inputString" placeholder="Enter String"></label>
+    <label for="inputNum"><select name="inputNum" id="inputNum" onchange="repeater()">
+        <option value="1">1</option>
+        <option value="2">2</option>
+        <option value="3">3</option>
+        <option value="4">4</option>
+        <option value="5">5</option>
+        <option value="6">6</option>
+        <option value="7">7</option>
+        <option value="8">8</option>
+        <option value="9">9</option>
+    </select></label>
+
+    <div class="box2">
+        
+    </div>
+
+    <script>
+    
+        
+        function repeater (){
+            document.querySelector('.box2').innerHTML = "";
+            var inputString = document.querySelector("#inputString").value.toUpperCase();
+            var selectedNum = document.querySelector("#inputNum").value;
+
+            for(let i = 0; i<selectedNum; i++){
+                var paragraph = document.createElement('p');
+                paragraph.textContent = inputString;
+                document.querySelector('.box2').appendChild(paragraph);
+            }
+        }
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,40 @@
+<!-- Write a HTML code that will display a textarea on webpage to accept a paragraph
+from user. On click of button Using JavaScript display first 5 and last 5 word with
+red color , times new roman font , size – 24 using embedded stylesheet -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Styled Text</title>
+    <style>
+        #styledText {
+            font-family: 'Times New Roman', Times, serif;
+            font-size: 24px;
+            color: red;
+        }
+    </style>
+    <script>
+        function styleText() {
+            var userParagraph = document.getElementById('userParagraph').value;
+            var words = userParagraph.split(/\s+/);
+            
+            var first5Words = words.slice(0, 5).join(' ');
+            var last5Words = words.slice(-5).join(' ');
+
+            var styledText = '<span id="styledText">' + first5Words + '</span> ' + userParagraph + ' <span id="styledText">' + last5Words + '</span>';
+
+            document.getElementById('output').innerHTML = styledText;
+        }
+    </script>
+</head>
+<body>
+    <textarea id="userParagraph" cols="30" rows="5"></textarea>
+    <br>
+    <button onclick="styleText()">Style Text</button>
+    <br>
+    <p><strong>Output:</strong></p>
+    <p id="output"></p>
+</body>
+</html>

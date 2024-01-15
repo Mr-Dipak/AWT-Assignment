@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <label for="num1">Enter Number1: <input type="text" id="num1"></label><br>
+    <label for="num2">Enter Number1: <input type="text" id="num2"></label><br>
+    <label for="result">Result: <input type="text" class="result" id="result"></label><br>
+    <button onclick="calculator('add')">add</button>
+    <button onclick="calculator('mul')">mul</button>
+    <button onclick="calculator('sub')">sub</button>
+    <button onclick="calculator('div')">div</button>
+
+    <script>
+
+        
+        function calculator(operation){
+            var num = parseFloat(document.getElementById('num1').value);
+            var numm = parseFloat(document.getElementById('num2').value);
+            var resultField = document.querySelector('.result')
+
+            switch(operation){
+                case 'add':
+                    resultField.value = num + numm;
+                    break;
+                case 'sub':
+                    resultField.value = num - numm;
+                    break;
+                case 'mul':
+                    resultField.value = num * numm;
+                    break;
+                case 'div':
+                    resultField.value = num / numm;
+                    break;
+
+                default:
+                    resultField.value ="Invalid operation"
+
+            }
+        }
+
+        
+
+    
+        
+        
+    </script>
+    
+</body>
+</htm

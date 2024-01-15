@@ -1,0 +1,35 @@
+<html>
+
+<head>
+
+</head>
+
+<body>
+    <div class="result"></div>
+
+    <script>
+        function promptRepeater() {
+
+            var unParseUserInput;
+            do {
+    
+                unParseUserInput =prompt("Please Enter Number!");
+                var userInput = parseInt(unParseUserInput)
+                if (!isNaN(userInput) && userInput !== null && userInput !== "") {
+                    var paragraph = document.createElement("p")
+                    paragraph.textContent = "Entered Number is: " + (userInput);
+                    document.querySelector(".result").appendChild(paragraph);
+                }
+                else {
+                    alert("Please Enter Valid Number!")
+                }
+            } while (userInput !== null && userInput !== 0);
+
+
+        }
+
+        promptRepeater()
+    </script>
+</body>
+
+</html>

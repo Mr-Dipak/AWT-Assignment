@@ -1,0 +1,27 @@
+<!-- Write a HTML code that will display a textbox on webpage to accept an age of
+student. Using JavaScript make sure that only numeric value should be accepted.
+(use regular expressions)
+ -->
+
+<html>
+    <head>
+       
+
+    </head>
+    <body>
+        <label for="studentAge">Enter Student Age: <input type="text" id="StudentAge" onblur="ageValidator()"></label>
+        <script>
+            function ageValidator(){
+                var regex = /^\d+$/;
+                var studentAge = document.querySelector('#studentAge').value;
+                if(regex.test(studentAge)){
+                    alert("valid age: " + studentAge)
+                }
+                else{
+                    alert("please enter valid age")
+                }
+            }
+        </script>
+        
+    </body>
+</html>

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Number Entry</title>
+</head>
+<body>
+
+    <script>
+        // Function to accept numbers until the user enters 0
+        function processNumbers() {
+            var userInput;
+            
+            // Continue prompting until the user enters 0
+            do {
+                // Prompt the user for a number
+                userInput = prompt("Enter a number (enter 0 to exit):");
+
+                // Convert the user input to a number
+                var parsedInput = parseFloat(userInput);
+
+                // Check if the input is not null and is a valid number
+                if (!isNaN(parsedInput) && userInput !== null && userInput !== "") {
+                    // Display the entered number on the webpage
+                    document.write("You have entered: " + parsedInput + "<br>");
+                } else {
+                    // Inform the user that the input is not a valid number
+                    alert('Please enter a valid number!');
+                }
+
+            } while (parsedInput !== null && parsedInput !== 0);
+        }
+
+        // Call the function to start the number entry process
+        processNumbers();
+    </script>
+
+</body>
+</html>

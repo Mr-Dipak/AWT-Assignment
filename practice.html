@@ -1,0 +1,38 @@
+<html>
+<script>
+
+document.write('<b>'+'this is my first program'+'</b>')
+document.write('<br><i>'+'this is my second program'+'<i>')
+
+// var x = prompt(" Enter any number")
+
+// document.write("<br>"+(x))
+// if(x%2==0)
+// alert((x)+" is even number")
+// else
+// alert((x)+" is odd number")
+
+function multi(form){
+    // form.result.value=form.num1.value*form.num2.value;
+    form.result.value=document.getElementsByName("nume1".value)
+}
+
+</script>
+
+<body>
+    <!-- <h1>hello javaScript</h1> -->
+
+    <form action="submit.php">
+
+        Enter Number 1 <input type="text" name="num1">
+        <br>
+        Enter Number 2 <input type="text" name="num2">
+        <br>
+        Result <input type="text" name="result" onfocus="multi(form)">
+
+
+
+    </form>
+
+</body>
+</html>

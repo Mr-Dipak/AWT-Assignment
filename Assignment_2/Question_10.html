@@ -1,0 +1,20 @@
+<html>
+    <head>
+    </head>
+    <body>
+        <label for="studentAddress">Enter Student Address: </label><br>
+        <textarea  id="studentAddress" cols="30" rows="5" onblur="studentAddress()"></textarea>
+        <script>
+            function studentAddress(){
+                var studentAddress = document.querySelector('#studentAddress').value;
+                var regex = /^[a-zA-Z\s\d]+$/;
+                if(regex.test(studentAddress)){
+                    alert("valid Address !")
+                }
+                else{
+                    alert("please enter valid address!")
+                }
+            }
+        </script>
+    </body>
+</html>

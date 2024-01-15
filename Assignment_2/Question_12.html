@@ -1,0 +1,24 @@
+<!-- . Write a HTML code that will display a textarea on webpage to accept a paragraph
+from user. Using JavaScript display the total count of word ‘sachin’ present in the
+paragraph. -->
+
+<html>
+    <head>
+        <script>
+            function nameCounter(){
+                var userName = document.getElementById('userName').value;
+                var paragraph = userName.match(/\bsachin\b/g)
+                if(paragraph !== null){
+                    var count = paragraph.length;
+                    alert('name coccour in paragraph: '+count);
+                }
+                else {
+                    alert('no occourance found')
+                }
+            }
+        </script>
+    </head>
+    <body>
+        <textarea id="userName" cols="30" rows="5" onblur="nameCounter()"></textarea>
+    </body>
+</html>

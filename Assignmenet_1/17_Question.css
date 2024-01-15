@@ -1,0 +1,274 @@
+/* CSS Selectors */
+
+
+/* particular tag selector */
+
+    p{
+        font-size: 10px;
+    }
+
+ /* for all element selector */
+    .my_class {
+
+        color:red;
+
+    }
+
+    /* for only p elements */
+
+    p.my_class{
+
+        color:yellow;
+    }
+
+
+/* CSS Backgrounds */
+
+/* background color of a page */
+
+    body{
+        background-color:olive;
+    }
+
+/* different color of elements */
+
+   div{
+    background-color: red;
+   }
+
+   p{
+    background-color: aqua;
+   }
+
+   /* different color of elements */
+
+    body{
+        background-image:url(worktable.jpg)
+    }
+
+
+/* <CSS Text */
+
+/* text color */
+    p{
+        color:red;
+    }
+
+    /* text align */
+
+    p.one{
+        text-align:center;
+    }
+    
+   p.two{
+    text-align: left;
+   }
+
+   p.three{
+    text-align: right;
+   }
+
+   Remove the line under links */
+   p.links{
+    text-decoration: none;
+    text-decoration: line-through;
+   }
+   p.underline{
+    text-align: underline;
+   }
+   p.capital{
+    text-transform:capitalize;
+   }
+   p.uppercase{
+    text-transform: lowercase;
+   }
+   p.lowercase{
+    text-transform:lowercase;
+   }
+   p.charspace{
+    letter-spacing: 30px;
+   }
+   p.linespace{
+    line-height: 20px;
+   }
+
+   
+
+/* CSS Font */
+
+
+     
+     p{
+        font-family:Times New Roman;
+        font-size:10px;
+     }
+
+/* CSS Links */
+
+    a:link{
+        color:red;
+       
+    }
+    a:visited{
+        color:green;
+    }
+
+    a:link{
+        text-decoration:none;
+        background-color: aqua;
+    }
+
+
+
+/* CSS Lists */
+
+/* All the different list item makers in lists */
+
+
+ul.a {list-style-type: circle;}
+ul.b {list-style-type: disc;}
+ul.c {list-style-type: square;}
+
+ol.d {list-style-type: armenian;}
+ol.e {list-style-type: cjk-ideographic;}
+ol.f {list-style-type: decimal;}
+ol.g {list-style-type: decimal-leading-zero;}
+ol.h {list-style-type: georgian;}
+ol.i {list-style-type: hebrew;}
+ol.j {list-style-type: hiragana;}
+ol.k {list-style-type: hiragana-iroha;}
+ol.l {list-style-type: katakana;}
+ol.m {list-style-type: katakana-iroha;}
+ol.n {list-style-type: lower-alpha;}
+ol.o {list-style-type: lower-greek;}
+ol.p {list-style-type: lower-latin;}
+ol.q {list-style-type: lower-roman;}
+ol.r {list-style-type: upper-alpha;}
+ol.s {list-style-type: upper-latin;}
+ol.t {list-style-type: upper-roman;}
+ol.u {list-style-type: none;}
+ol.v {list-style-type: inherit;}
+
+/* Set an image as the list-item maker */
+
+ul {
+    list-style-image: url('sqpurple.gif');
+  }
+
+/* CSS Tables */
+
+/* Specify a black border for table, th, and td elements */
+
+table, th, td {
+    border: 1px solid;
+
+/* Specify the width and height of a table */
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+  }
+  
+  th {
+    height: 70px;
+  }
+
+/* Set the horizontal alignment of content (text_aling */
+th {
+    text-align: left;
+  }
+  
+/* Set the vertical alignment of content (vetical_align */
+
+td {
+    height: 50px;
+    vertical-align: bottom;
+  }
+
+/* Specify the padding for th and td elements  */
+/* CSS Margin */
+
+th, td {
+    padding: 15px;
+  }
+
+/* Specify the color of the table borders */
+th {
+    background-color: #04AA6D;
+    color: white;
+  }
+
+  /* CSS Border */
+
+  p.one{
+    border-color:red;
+    border-top-color:red;
+    border-bottom-color:red;
+    border-left:red;
+    border-right:red;
+}
+
+/* CSS Margin */
+div {
+    border: 1px solid black;
+    margin-top: 100px;
+    margin-bottom: 100px;
+    margin-right: 150px;
+    margin-left: 80px;
+    background-color: lightblue;
+  }
+
+  div {
+    border: 1px solid black;
+    margin: 100px 150px 100px 80px;
+    background-color: lightblue;
+  }
+
+/* CSS Padding */
+
+  p.padding {
+    padding-left: 2cm;
+  }
+  p.padding2 {
+    padding-left: 50%;
+  }
+
+
+
+  p.padding {
+    padding-right: 2cm;
+  }
+  
+  p.padding2 {
+    padding-right: 50%;
+  } 
+
+
+
+
+  p.padding {
+    padding-top: 2cm;
+  }
+  
+  p.padding2 {
+    padding-top: 50%;
+  }
+
+
+
+  p.padding {
+    padding-top: 2cm;
+  }
+  
+  p.padding2 {
+    padding-top: 50%;
+  }
+
+
+  p.padding {
+    padding-bottom:2cm;
+  }
+  
+  p.padding2 {
+    padding-bottom:50%;
+  }
